@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<cabinet>
+    
+    <nom>Soins à Grenoble</nom>
+    
+    <adresse>
+        <numéro>60</numéro>
+        <rue>rue de la Chimie</rue>
+        <codePostal>38041</codePostal>
+        <ville>Grenoble</ville>
+    </adresse>
+    
+    <infirmiers>
+        <infirmier id="001">
+            <nom>Fréchie</nom>
+            <prénom>Sarah</prénom>
+            <photo>sarah.png</photo>
+        </infirmier>
+        <infirmier id="002">
+            <nom>Stické</nom>
+            <prénom>Sophie</prénom>
+            <photo>sophie.jpg</photo>
+        </infirmier>
+        <infirmier id="003">
+            <nom>Ochon</nom>
+            <prénom>Paul</prénom>
+            <photo>paul.png</photo>
+        </infirmier>
+    </infirmiers>
+    
+    <patients>
+        <patient>
+            <nom>Alécole</nom>
+            <prénom>Yvon</prénom>
+            <sexe>M</sexe>
+            <naissance>1998-08-22</naissance>
+            <numéro>198082205545852</numéro>
+            <adresse>
+                <étage>6</étage>
+                <numéro>50</numéro>
+                <rue>avenue Félix Viallet</rue>
+                <ville>Grenoble</ville>
+                <codePostal>38031</codePostal>
+            </adresse>
+            <visite date="2015-12-08" intervenant="001">
+                <acte id ="109"></acte>
+            </visite>
+        </patient>
+    </patients>
+    
+</cabinet>
