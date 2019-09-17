@@ -1,0 +1,19 @@
+
+
+question 3.2
+count(/codeCourantMG/categorie/codeNGAP/code)
+question 3.3
+count(/codeCourantMG/categorie/nom)
+question 3.4
+/codeCourantMG/categorie[position()=5]/nom
+question 3.5
+/codeCourantMG/categorie/codeNGAP/code[text()='MGE']/../montant
+question 3.6
+count(/codeCourantMG/categorie/codeNGAP/montant[node()<50] /../code)
+question 3.7
+/codeCourantMG/categorie/codeNGAP/code[text()='MGE']/../../nom
+question 3.8
+/codeCourantMG/categorie/codeNGAP/montant[node()>65 and node()<70] /../code
+
+
+
