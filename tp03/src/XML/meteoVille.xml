@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<meteoVille
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='file:/home/e/elasrim/LangagePourLeWeb/tp03/src/xsd/meteoVille.xsd'>
+    <ville>
+        <nom>Grenoble</nom>
+        <pays>France</pays>
+    </ville>
+    <date>2019-09-24</date>
+    <temperatureMin>10.0</temperatureMin>
+    <temperatureMax>24.5</temperatureMax>
+
+</meteoVille>
