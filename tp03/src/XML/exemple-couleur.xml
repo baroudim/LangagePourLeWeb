@@ -10,15 +10,15 @@ and open the template in the editor.
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xmlns:ns1='http://ujf-grenoble.fr/echec'
     xsi:schemaLocation='http://ujf-grenoble.fr/echec file:/C:/Users/ismail/Documents/NetBeansProjects/LangagePourLeWeb/tp03/src/xsd/echec.xsd'>
-    
-     <ns1:piece>
-        <ns1:nom>roi</ns1:nom>
-        <ns1:position>
-            <ns1:colonne>G</ns1:colonne>
-            <ns1:ligne>1</ns1:ligne>
-        </ns1:position>
-    </ns1:piece>
-    
+    <ns1:piecesNoires>
+        <ns1:piece>
+           <ns1:nom>roi</ns1:nom>
+           <ns1:position>
+               <ns1:colonne>G</ns1:colonne>
+               <ns1:ligne>1</ns1:ligne>
+           </ns1:position>
+       </ns1:piece>
+    </ns1:piecesNoires>
     <ns1:commentaire></ns1:commentaire>
     
 
