@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<schema version="1.0"
+           targetNamespace="http://ujf-grenoble.fr/tux/dico"
+           xmlns="http://www.w3.org/2001/XMLSchema"
+           xmlns:di="http://ujf-grenoble.fr/tux/dico"
+           elementFormDefault="qualified">
+    <element name="dictionnaire" type="di:Dictionnaire"/>
+    <complexType name="Dictionnaire">
+        <sequence>
+            <element name="mot" type="di:Mot"/>
+        </sequence>
+    </complexType>
+    
+    <complexType name="Mot"><!-- ajout attribut sur un type simple -->
+        <simpleContent>
+            <extension base ="di:Motdic"><!-- motdic patterne//type simple du contenu -->
+                <attribute name = "niveau" type ="di:Niveau"/>
+            </extension>
+        </simpleContent>
+    </complexType>
+    <simpleType name="Niveau">
+        <restriction base="int">
+            <enumeration value="1"/>
+            <enumeration value="2"/>
+            <enumeration value="3"/>
+            <enumeration value="4"/>
+            <enumeration value="5"/>
+        </restriction>
+    </simpleType>
+    <simpleType name="Motdic">
+        <restriction base="string">
+            <pattern value=""/>            
+        </restriction>
+    </simpleType>
+
+</schema>
