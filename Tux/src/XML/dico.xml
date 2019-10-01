@@ -7,33 +7,33 @@ and open the template in the editor.
 
 
 <dictionnaire>
-    <mot niveau = "1" > papa </mot>
-    <mot niveau = "1" > maman </mot>
-    <mot niveau = "1" > bonbon</mot>
-    <mot niveau = "1" > manger </mot>
-    <mot niveau = "1" > dormir </mot>
-    <mot niveau = "1" > chanter </mot>
-    <mot niveau = "1" > jeux </mot>
-    <mot niveau = "1" > porte </mot>
-    <mot niveau = "2" > chat </mot>
-    <mot niveau = "2" > chien </mot>
-    <mot niveau = "2" > tomate </mot>
-    <mot niveau = "2" > fraise </mot>
-    <mot niveau = "2" > pomme </mot>
-    <mot niveau = "2" > banane </mot>
-    <mot niveau = "2" > lapin </mot>
-    <mot niveau = "3" > feutre </mot>
-    <mot niveau = "3" > brosse </mot>
-    <mot niveau = "3" > chaise </mot>
-    <mot niveau = "3" > cheveux </mot>
-    <mot niveau = "3" > cerise </mot>
-    <mot niveau = "4" > histoire </mot>
-    <mot niveau = "4" > abeille </mot>
-    <mot niveau = "4" > police </mot>
-    <mot niveau = "4" > vase </mot>
-    <mot niveau = "5" > trompette </mot>
-    <mot niveau = "5" > flute </mot>
-    <mot niveau = "5" > camion </mot>
-    <mot niveau = "5" > zebre </mot>
+    <mot niveau = "1" >papa </mot>
+    <mot niveau = "1" >maman </mot>
+    <mot niveau = "1" >bonbon</mot>
+    <mot niveau = "1" >manger </mot>
+    <mot niveau = "1" >dormir </mot>
+    <mot niveau = "1" >chanter </mot>
+    <mot niveau = "1" >jeux </mot>
+    <mot niveau = "1" >porte </mot>
+    <mot niveau = "2" >chat </mot>
+    <mot niveau = "2" >chien </mot>
+    <mot niveau = "2" >tomate </mot>
+    <mot niveau = "2" >fraise </mot>
+    <mot niveau = "2" >pomme </mot>
+    <mot niveau = "2" >banane </mot>
+    <mot niveau = "2" >lapin </mot>
+    <mot niveau = "3" >feutre </mot>
+    <mot niveau = "3" >brosse </mot>
+    <mot niveau = "3" >chaise </mot>
+    <mot niveau = "3" >cheveux </mot>
+    <mot niveau = "3" >cerise </mot>
+    <mot niveau = "4" >histoire </mot>
+    <mot niveau = "4" >abeille </mot>
+    <mot niveau = "4" >police </mot>
+    <mot niveau = "4" >vase </mot>
+    <mot niveau = "5" >trompette </mot>
+    <mot niveau = "5" >flute </mot>
+    <mot niveau = "5" >camion </mot>
+    <mot niveau = "5" >zebre </mot>
     
 </dictionnaire>
