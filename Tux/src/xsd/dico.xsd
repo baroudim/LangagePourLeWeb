@@ -6,21 +6,21 @@ and open the template in the editor.
 -->
 
 <schema version="1.0"
-           targetNamespace="http://ujf-grenoble.fr/tux/dico"
+           targetNamespace="http://myGame/tux"
            xmlns="http://www.w3.org/2001/XMLSchema"
-           xmlns:di="http://ujf-grenoble.fr/tux/dico"
+           xmlns:tux="http://myGame/tux"
            elementFormDefault="qualified">
-    <element name="dictionnaire" type="di:Dictionnaire"/>
+    <element name="dictionnaire" type="tux:Dictionnaire"/>
     <complexType name="Dictionnaire">
         <sequence>
-            <element name="mot" type="di:Mot"/>
+            <element name="mot" type="tux:Mot"  maxOccurs="unbounded"/>
         </sequence>
     </complexType>
     
     <complexType name="Mot"><!-- ajout attribut sur un type simple -->
         <simpleContent>
-            <extension base ="di:Motdic"><!-- motdic patterne//type simple du contenu -->
-                <attribute name = "niveau" type ="di:Niveau"/>
+            <extension base ="tux:Motdic"><!-- motdic patterne//type simple du contenu -->
+                <attribute name = "niveau" type ="tux:Niveau"/>
             </extension>
         </simpleContent>
     </complexType>
@@ -35,8 +35,7 @@ and open the template in the editor.
     </simpleType>
     <simpleType name="Motdic">
         <restriction base="string">
-            <pattern value=""/>            
+            <pattern value="[a-zéèàùê]+(-[a-zéèàùê]*)?"/>            
         </restriction>
     </simpleType>
-
 </schema>
