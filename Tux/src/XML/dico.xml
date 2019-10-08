@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 
 <dictionnaire 
-xmlns ="http://myGame/tux"
+    xmlns ="http://myGame/tux"
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xsi:schemaLocation='http://myGame/tux ../xsd/dico.xsd'>
     
