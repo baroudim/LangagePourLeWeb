@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<schema version="1.0"
+        targetNamespace="http://www.ujf-grenoble.fr/l3miage/medical"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:cab="http://www.ujf-grenoble.fr/l3miage/medical"
+        elementFormDefault="qualified">
+    
+    
+    <element name="cabinet" type="cab:Cabinet"/>
+        
+    <complexType name="Cabinet">
+        <sequence>
+            <element name="nom" type="string"/>
+            <element name="adresse" type="cab:Adresse"/>
+            <element name="infirmiers" type="cab:Infirmiers"/>
+            <element name="patients" type="cab:Patients"/>
+        </sequence>
+    </complexType>
+   <complexType name="Adresse">
+        <sequence>
+            <element name="numéro" type="byte"/>
+            <element name="rue" type="string" />
+            <element name="ville" type="string" />
+            <element name="codePostal"  type="int" />
+        </sequence>
+    </complexType>
+               
+                
+    <complexType name="Infirmiers">
+        <sequence>
+            <element name="infirmier" type ="cab:Infirmier" maxOccurs="unbounded" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    
+    <complexType name="Infirmier">
+        <sequence>
+           <element name="nom" type="string"/>
+           <element name="prénom"  type="string"/>
+           <element name="photo" type="string"/>
+        </sequence>
+       <attribute name="id" type="byte"/>
+    </complexType>
+                      
+    <complexType name="Patients">
+        <sequence>
+            <element name="patient" type="cab:Patient" maxOccurs="unbounded" minOccurs="0"/>
+        </sequence>
+    </complexType>
+    
+    <complexType name="Patient">
+        <sequence>
+            <element name="nom" type="string"/>
+            <element name="prénom" type="string" />
+            <element name="sexe" type="string" />
+            <element name="naissance" type="date" />
+            <element name="numéro" type="long" />
+           <element name="adresse" type="cab:Adress"/>
+           <element name="visite" type="cab:Visite"/>
+        </sequence>
+    </complexType>
+    
+        
+    <complexType name="Adress">
+        <sequence>
+            <element  name="étage" type="byte" minOccurs="0"/>
+            <element  name="numéro"  type="byte" minOccurs="0"/>
+            <element  name="rue" type="string"/>
+            <element name="ville" type="string"/>
+            <element  name="codePostal" type="int"/>
+        </sequence>
+    </complexType>
+                 
+                                        
+    <complexType name="Visite">
+        <sequence>
+            <element name="acte" type="cab:Acte"/>
+        </sequence>
+        <attribute   name="date" type="date"/>
+         <attribute  name="intervenant"  type="byte"/>
+    </complexType>
+    
+    <complexType name="Acte">
+       <simpleContent>
+            <extension base="string">
+                <attribute name="id" type="short" />  
+            </extension>
+        </simpleContent>
+    </complexType>                                                     
+                                                    
+</schema>
+
+ 
+            
+             
+    
+    
